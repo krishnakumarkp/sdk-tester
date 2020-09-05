@@ -1,0 +1,21 @@
+{
+    "name":"sdk tester",
+    "description":"The api sdk library tester",
+    "type": "project",
+    "license" : "MIT",
+    "require":{
+        "php": ">=7.1",
+		"Krishnakumarkp/sdk-php":"dev-master#20200905.141900/20200905.084254"
+    },
+    "autoload":{
+        "psr-4":{
+            "Src\\":"src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/krishnakumarkp/sdk-php.git"
+        }
+    ]
+}

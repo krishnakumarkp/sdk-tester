@@ -1,0 +1,7 @@
+/vendor
+/build
+/sdk-php
+/sdk-repo
+/swagger-file
+composer.lock
+composer.phar
