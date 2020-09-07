@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="php-sdk-testor" default="full-build">
+    <target name="clean" unless="clean.done" description="Cleanup build artifacts.">
+        <delete dir="${basedir}/vendor"/>
+        <delete file="${basedir}/composer.lock"/>
+    </target>
     <target name="composer" description="Install composer packages including require-dev.">
         <get src="https://getcomposer.org/download/1.10.10/composer.phar" dest="composer.phar"/>
         <exec executable="php" failonerror="true">
@@ -8,5 +12,9 @@
             <arg value="--prefer-dist"/>
             <arg value="--no-progress"/>
         </exec>
+    </target>
+    <target name="full-build" depends="clean,composer"
+            description="Install sdk in sdk tester">
+        <echo message="Built"/>
     </target>
 </project>
