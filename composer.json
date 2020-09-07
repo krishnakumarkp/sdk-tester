@@ -5,7 +5,7 @@
     "license" : "MIT",
     "require":{
         "php": ">=7.1",
-		"Krishnakumarkp/sdk-php":"dev-master#20200905.141900/20200905.084254"
+		"Krishnakumarkp/sdk-php":"dev-master#20200905.141900.20200907.041201"
     },
     "autoload":{
         "psr-4":{
